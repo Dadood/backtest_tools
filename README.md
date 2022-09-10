@@ -9,15 +9,19 @@ Mise en place du projet:
 > cd backtest_tools
 
 Mise en place de l'environnement virtuel (très recommandé):
->python -m venv .venv  
->.venv\Scripts\activate  
->pip install -r .\requirements.txt  
+#>python -m venv .venv
+###[DG] Commande python remplacée par la commande py
+>py -m venv .venv
+###[DG] Changement de la regle d'execution des scripts windows pour le current user avec la commander Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+>.venv\Scripts\activate
 
 Installation des dépendances python (Bien vérifier que vous avez (.venv) au début de votre ligne de commande):
 >pip install -r requirements.txt
 
 Installation des dépendances node:
 >npm install
+To address all issues, run:
+>npm audit fix
 
 Le projet est prêt à être utilisé.
 
