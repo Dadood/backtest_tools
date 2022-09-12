@@ -133,6 +133,7 @@ async function get_multi_ohlcv(exchange, pair_list, tf_list, start_date, exchang
 
 
 // --- Edit exchange here ---
+// Specific to binance
 let exchange = new ccxt.binance({ enableRateLimit: true })
 
 // --- Edit coin list here ---
